@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LaundryAlert</string>
+    
+    <!-- メイン画面 -->
+    <string name="current_weather">現在の天気</string>
+    <string name="temperature">気温: %1$d°C</string>
+    <string name="humidity">湿度: %1$d%%</string>
+    <string name="precipitation">降水確率: %1$d%%</string>
+    <string name="laundry_status">洗濯物の状態</string>
+    <string name="currently_drying">干し中</string>
+    <string name="brought_in">取り込み済み</string>
+    <string name="not_hanging">干していません</string>
+    <string name="hourly_forecast">時間別予報</string>
+    <string name="hang_laundry">洗濯物を干す</string>
+    <string name="bring_in_laundry">取り込む</string>
+    
+    <!-- 通知 -->
+    <string name="rain_alert">雨アラート!</string>
+    <string name="bring_in_now">洗濯物を取り込んでください</string>
+    <string name="rain_expected_in">%1$d分後に雨が予想されます</string>
+    <string name="mark_as_brought_in">取り込み完了</string>
+    <string name="snooze_10_min">10分後に再通知</string>
+    
+    <!-- 設定画面 -->
+    <string name="settings">設定</string>
+    <string name="notification_settings">通知設定</string>
+    <string name="enable_notifications">通知を有効にする</string>
+    <string name="alert_timing">アラートタイミング</string>
+    <string name="alert_timing_30min">30分前</string>
+    <string name="alert_timing_1hour">1時間前</string>
+    <string name="alert_timing_2hour">2時間前</string>
+    <string name="alarm_sound">アラーム音</string>
+    <string name="location_settings">位置情報設定</string>
+    <string name="auto_detect_location">位置情報を自動取得</string>
+    <string name="manual_location">手動で位置を設定</string>
+    <string name="weather_settings">天気設定</string>
+    <string name="precipitation_threshold">降水確率の閾値</string>
+    <string name="about">アプリについて</string>
+    <string name="app_version">アプリバージョン</string>
+    <string name="support">サポート</string>
+    
+    <!-- エラーメッセージ -->
+    <string name="error_network">ネットワークエラーが発生しました</string>
+    <string name="error_location">位置情報を取得できませんでした</string>
+    <string name="error_weather_api">天気情報を取得できませんでした</string>
+    <string name="error_permission_location">位置情報の権限が必要です</string>
+    <string name="error_permission_notification">通知の権限が必要です</string>
+    
+    <!-- 権限要求 -->
+    <string name="permission_location_title">位置情報の許可</string>
+    <string name="permission_location_message">天気情報を取得するために位置情報が必要です</string>
+    <string name="permission_notification_title">通知の許可</string>
+    <string name="permission_notification_message">雨アラートを送信するために通知の許可が必要です</string>
+    <string name="grant_permission">許可する</string>
+    <string name="deny_permission">拒否</string>
+    
+    <!-- 一般 -->
+    <string name="ok">OK</string>
+    <string name="cancel">キャンセル</string>
+    <string name="retry">再試行</string>
+    <string name="loading">読み込み中...</string>
+</resources>
+

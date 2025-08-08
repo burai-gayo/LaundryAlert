@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="@string/notification_settings">
+
+        <SwitchPreferenceCompat
+            android:key="enable_notifications"
+            android:title="@string/enable_notifications"
+            android:defaultValue="true"
+            android:summary="雨アラートの通知を有効にする" />
+
+        <ListPreference
+            android:key="alert_timing"
+            android:title="@string/alert_timing"
+            android:entries="@array/alert_timing_entries"
+            android:entryValues="@array/alert_timing_values"
+            android:defaultValue="30"
+            android:summary="雨が降る何分前にアラートするか" />
+
+        <SeekBarPreference
+            android:key="precipitation_threshold"
+            android:title="@string/precipitation_threshold"
+            android:max="100"
+            android:defaultValue="30"
+            android:summary="アラートを発する降水確率の閾値（%）" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/location_settings">
+
+        <SwitchPreferenceCompat
+            android:key="auto_detect_location"
+            android:title="@string/auto_detect_location"
+            android:defaultValue="true"
+            android:summary="GPSを使用して自動的に位置を取得" />
+
+        <EditTextPreference
+            android:key="manual_location"
+            android:title="@string/manual_location"
+            android:summary="手動で設定した位置情報"
+            android:dependency="auto_detect_location"
+            android:enabled="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/weather_settings">
+
+        <ListPreference
+            android:key="weather_update_interval"
+            android:title="天気情報の更新間隔"
+            android:entries="@array/update_interval_entries"
+            android:entryValues="@array/update_interval_values"
+            android:defaultValue="15"
+            android:summary="天気情報を更新する間隔（分）" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/about">
+
+        <Preference
+            android:key="app_version"
+            android:title="@string/app_version"
+            android:summary="1.0.0"
+            android:selectable="false" />
+
+        <Preference
+            android:key="support"
+            android:title="@string/support"
+            android:summary="お問い合わせ・サポート" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
+

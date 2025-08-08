@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LaundryAlert" parent="Theme.Material3.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/primary_blue_dark</item>
+        <item name="colorOnPrimary">@color/text_white</item>
+        
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/accent_blue</item>
+        <item name="colorSecondaryVariant">@color/rain_blue</item>
+        <item name="colorOnSecondary">@color/text_white</item>
+        
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        
+        <!-- Background colors -->
+        <item name="android:windowBackground">@color/background_white</item>
+        <item name="colorSurface">@color/background_card</item>
+        <item name="colorOnSurface">@color/text_dark</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_dark</item>
+        <item name="android:textColorSecondary">@color/text_light</item>
+        
+        <!-- Button styles -->
+        <item name="materialButtonStyle">@style/Widget.LaundryAlert.Button</item>
+    </style>
+    
+    <!-- Custom button style -->
+    <style name="Widget.LaundryAlert.Button" parent="Widget.Material3.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+    
+    <!-- Primary action button -->
+    <style name="Widget.LaundryAlert.Button.Primary" parent="Widget.LaundryAlert.Button">
+        <item name="backgroundTint">@color/primary_blue</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+    
+    <!-- Warning action button -->
+    <style name="Widget.LaundryAlert.Button.Warning" parent="Widget.LaundryAlert.Button">
+        <item name="backgroundTint">@color/warning_orange</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+    
+    <!-- Card style -->
+    <style name="Widget.LaundryAlert.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="cardBackgroundColor">@color/background_card</item>
+    </style>
+    
+    <!-- Text styles -->
+    <style name="TextAppearance.LaundryAlert.Headline" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="TextAppearance.LaundryAlert.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="TextAppearance.LaundryAlert.Body" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>
+
